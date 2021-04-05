@@ -1,0 +1,7 @@
+releases:
+- name: webapp
+  namespace: default
+  chart: ./webapp
+  set:
+  - name: rbac.create
+    value: false
