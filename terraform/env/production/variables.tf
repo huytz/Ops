@@ -1,3 +1,7 @@
+variable "eks_name" {
+  type        = string
+  description = "EKS version"
+}
 variable "region" {
   type        = string
   description = "AWS Region"

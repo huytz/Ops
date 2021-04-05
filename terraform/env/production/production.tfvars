@@ -1,14 +1,8 @@
-module_version = "0.38.0"
-
 region = "ap-southeast-1"
 
 availability_zones = ["ap-southeast-1a", "ap-southeast-1b"]
 
-namespace = "default"
-
-stage = "production"
-
-name = "eks"
+eks_name = "eks"
 
 kubernetes_version = "1.19"
 
