@@ -4,7 +4,7 @@ provider "aws" {
 module "label" {
   source     = "cloudposse/label/null"
   version    = "0.24.1"
-  attributes = ["cluster"]
+  attributes = ["eks-cluster"]
 
 }
 module "vpc" {
