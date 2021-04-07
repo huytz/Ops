@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  pullPolicy: IfNotPresent
+  repository: 369537814977.dkr.ecr.ap-southeast-1.amazonaws.com/webapp
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
@@ -38,7 +38,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 5000
 
 ingress:
   enabled: true
@@ -47,7 +47,8 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   hosts:
     - host: app.huytran.dev
-      paths: /
+      paths: 
+        - path: /
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
